@@ -85,5 +85,66 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    font-size: 18px
+    font-size: 10px
 }   
+
+/*Listas*/
+ol ul{
+    /* Ajusta a listapara o centro */
+    list-style-position: inside;
+    padding-left: 0;
+    /* alinhamento  de texto */
+    text-align: left;
+}
+
+li{
+    /* margim inferior */
+    margin-bottom: 5px;
+}
+
+/* Cartoes = card */
+
+.portifolio-container{
+    /* organizar o container */
+    display: flex;
+    /* alinhamento de conteudo */
+    justify-content: center;
+    /* Quebra de linha */
+    flex-wrap: wrap;
+    /* espaçamento */
+    gap:20px;
+    padding: 20px;
+}
+
+.card{
+    width:300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    /* Sombra da caixa */
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.2);
+    /* configura a elocidade de transição */
+    transition: transform 0.3s;
+
+}
+.card:hover{
+    /* Efeito de hover */
+    transform: scale(1.05);
+}
+.card a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color : white;
+    text-decoration: none;
+    /* arredondamento */
+    border-radius: 5px;
+
+}
+
+.card a:hover{
+    background-color: var(--cor-secundaria);
+    color: white;
+}

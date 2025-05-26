@@ -1,45 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kauan</title>
-    <!-- Carregar o css -->
+    <!-- Carregar o css-->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- aqui eu coloco oque eu quero na pagina -->
-     <!-- Cabeçalho do site: menus -->
-      <header>Kauan</header>
-      <!-- menus -->
-       <nav>
-        <!-- Links -->
-         <a href="https://www.google.com">Goggle</a> 
-         <!-- abrir em nova janela -->
-         <a href="https://www.google.com" target="_blank">Goggle</a>
-         <!-- eu posso ter para sections da minha pagina -->
-            <a href="#serviços">Serviços</a>
-          <!-- eu posso ter para paginas inernas -->
-           <a href="https://www.meusite.com.br/sobre" target="_blank">Sobre</a>
-       </nav>
-      <!-- conteudo dinamico -->
-       <!-- div serve aoenas como container -->
-    <div class="container">
-         <main id="content">
-             <h1>Conheça meu potifólio</h1>
-             <p>Explore para conhecer mais sobre meus conteudos, produtos e serviços.</p>
+    <!-- Aqui eu coloco o que eu quero na minha pagina -->
+    <!-- Cabeçalho do site: menus -->
+    <!-- cabeçalho da minha pagina -->
+    <header>Kauan</header>
+    <!-- menus-->
+    <nav>
+        <!-- Links-->
+        <!-- href e o completo do link-->
+        
+        <a href="#" onclick="carregarPagina('home.html')">Home</a>
+        <a href="#" onclick="carregarPagina('sobre.html')">Sobre mim</a>
+        <a href="#" onclick="carregarPagina('formação.html')">Formação</a>
+        <a href="#" onclick="carregarPagina('portifolio.html')">Portifolio</a>
+        <a href="#" onclick="carregarPagina('contato.html')">Contato</a>
+        <!-- abrir em uma nova janela-->
+        <a href="https:www.google.com" target="_blank">Google</a>
+        <!-- eu posso ter para sections da minha pagina -->
+        <a href="#servicos">Serviços</a>
+    </nav>
+    <!--Conteudo Dinamico -->
+        <!-- div serve apenas como container -->
+        <div class="container">
+            <main id="content">
+                <h1>Conheça o meu portifólio</h1>
+                <p>Explore para conhecer mais sobre 
+                meus conteúdos, produtos e serviços.</p>
+            </main>
+        </div>
 
-         </main>
-    </div>
-        <!-- aqui eu coloco o conteudo -->
-       <!-- rodape -->
-        <footer>
-        &copy; 2025 Kauan&trade;. Todos os direitos reservados.
-        </footer>
-     <!-- importar o javascript -->
-      <script src="script.js"></script>
+    <!-- Rodape -->
+     <footer>
+        &copy; 2025 - Meu portifólio&trade; - Todos os direitos reservados.
+     </footer>
+    <!-- Aqui termina o meu conteudo -->
+    <!-- Importar o javascript-->
+    <script src="script.js"></script>
 </body>
 
 </html>
