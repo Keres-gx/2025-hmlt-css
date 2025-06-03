@@ -69,13 +69,13 @@ console.log(6 !== 6);
 function statusNota(nota) {
     // controle de fluxo
     let msg = 'Não informado';
-    if(nota >= 6) {
+    if (nota >= 6) {
         msg = 'Aprovado';
     }
-    else if(nota >= 5) {
+    else if (nota >= 5) {
         msg = 'Recuperação';
     }
-    else if(nota < 5) {
+    else if (nota < 5) {
         msg = 'Reprovado';
     }
     return msg;
@@ -85,53 +85,73 @@ console.log(situação);
 
 let nota = 5.6;
 let presença = 90
-if(nota >= 6 & presença >= 75) {
+if (nota >= 6 & presença >= 75) {
     console.log('Aprovado');
-}else{
+} else {
     console.log('Reprovado');
 }
- let finaldocurso = true
- let liberouMaisCedo = false
+let finaldocurso = true
+let liberouMaisCedo = false
 
-    if(finaldocurso | liberouMaisCedo) {
-        console.log('Hora de ir embora');
-    }
-    else {
-        console.log('Continua o baile');
-    } 
+if (finaldocurso | liberouMaisCedo) {
+    console.log('Hora de ir embora');
+}
+else {
+    console.log('Continua o baile');
+}
 
-    let teste = (>= 6 && presença >= 75) & (finaldocurso | liberouMaisCedo) 
-    console.log(frutas)
-    //0 = false e 1= True
-    //coleção de dados
-    let frutas = ['maçã', 'banana', 'laranja', 'uva'];
-    console.log(frutas);
-    //Chamar pelo indice 0,1,2....
-    console.log(frutas[1]);
-    //Adicionar nova fruta
-    frutas.push('Abacate');
-    console.log(frutas);
-    // Remover o ultimo
-    frutas.pop();
-    //remover o primeiro
-    frutas.shift();
-    //colocar no inicio da fila
-    frutas.unshift('Pera');
-    console.log(frutas);
-    // iteração
-    //para:percorre uma lista conhecida
-    for(let f of frutas){
-        console.log(f)
-    }
-    for(f in frutas){
-        console.log(f)
-    }
-    //enquanto nao tiver fim
-    let contador = 0;
-    while(contador <=10) {
-console.log(contador, regressiva);
-       //incrementar
-       contador++
-       //decrementar
-       regressiva--; 
-    }
+let teste = (nota >= 6 && presença >= 75) && (finaldocurso || liberouMaisCedo);
+console.log(frutas)
+//0 = false e 1= True
+//coleção de dados
+let frutas = ['maçã', 'banana', 'laranja', 'uva'];
+console.log(frutas);
+//Chamar pelo indice 0,1,2....
+console.log(frutas[1]);
+//Adicionar nova fruta
+frutas.push('Abacate');
+console.log(frutas);
+// Remover o ultimo
+frutas.pop();
+//remover o primeiro
+frutas.shift();
+//colocar no inicio da fila
+frutas.unshift('Pera');
+console.log(frutas);
+// iteração
+//para:percorre uma lista conhecida
+for (let f of frutas) {
+    console.log(f)
+}
+for (f in frutas) {
+    console.log(f)
+}
+//enquanto nao tiver fim
+let contador = 0;
+while (contador <= 10) {
+    console.log(contador, regressiva);
+    //incrementar
+    contador++
+    //decrementar
+    regressiva--;
+}
+
+let pessoa = {
+    nome: 'Kauan',
+    idade: 15,
+    cidadeUF: 'castro/PR',
+    profissão: 'Programador',
+}
+
+console.log(pessoa);
+console.log(pessoa['nome']);
+console.log(pessoa.nome);
+//Mudar item
+pessoa['nome'] = 'Kauan Luidy';
+pessoa.cidadeUF = 'Castro/PR';
+console.log(pessoa);
+pessoa['linguagem']="JS"
+pessoa.framework = 'React JS';
+console.log(pessoa);
+//desestruturador (destrutor)
+const { nome: nome_pessoa, idade: idade_pessoa } = pessoa;
